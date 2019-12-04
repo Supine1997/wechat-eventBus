@@ -8,19 +8,19 @@ import EventBus from '@eventBus/eventBusts';
 使用方法  
 ---PageA---  
 page({  
-  onLoad(){  
-    EventBus.on('eventName',this,(msg)=>{  
-      console.log(msg);  
-    })  
+　onLoad(){  
+　　EventBus.on('eventName',this,(msg)=>{  
+　　　console.log(msg);  
+　　})  
   },  
-  onUnload(){  
-    EventBus.remove('eventName',this);  
-  }  
+　onUnload(){  
+　　EventBus.remove('eventName',this);  
+　}  
 })  
   
 ---PageB---  
 page({  
-  onLoad(){  
-    EventBus.send('eventName','Hello this is PageB')  
-  },  
+　onLoad(){  
+　　EventBus.send('eventName','Hello this is PageB')  
+　},  
 })  
